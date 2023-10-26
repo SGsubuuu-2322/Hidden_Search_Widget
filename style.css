@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(90deg, #7d5fff, #715);
+  background-image: linear-gradient(90deg, #715, #7d5fff);
   font-family: "Young serif";
   display: flex;
   align-items: center;
@@ -13,6 +13,9 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+body.act {
+  background-image: linear-gradient(90deg, #7d5fff, #715);
 }
 
 .search {
@@ -35,6 +38,7 @@ body {
   width: 50px;
   font-size: 24px;
   border: 0;
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,9 +51,12 @@ body {
 }
 
 .search.active .input {
+  border-radius: 50px;
   width: 200px;
 }
 
 .search.active .btn {
+  margin-left: 10px;
+  border-radius: 50px;
   transform: translateX(198px);
 }
